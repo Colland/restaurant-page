@@ -78,7 +78,8 @@ body
 {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    grid-gap: 15px;
+    padding: 40px 60px 40px 20px;
     background-color: rgb(0, 0, 0, .75);
     width: 600px;
     height: 200px;
@@ -92,10 +93,39 @@ body
     border-radius: 20px;
 }
 
+#main-card div
+{
+    display: flex;
+}
+
 #main-card div p
 {
     width: 270px;
     margin-bottom: 15px;
+}
+
+#hours-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#address-icon
+{
+    width: 40px;
+    height: 40px;
+    background-image: url(./location_icon.svg);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#hours-icon
+{
+    width: 40px;
+    height: 40px;
+    background-image: url(./hours_icon.svg);
+    display: inline-block;
+    margin-right: 10px;
 }
 
 #menu-container
@@ -194,12 +224,12 @@ body
     color: white;
     font-size: 24px;
     text-align: center;
-    padding: 0px 60px 40px 60px;
+    padding: 0px 5vw 40px 5vw;
 }
 
 #info-block h3
 {
-    font-size: 40px;
+    font-size: calc(2px + 2vw);
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -207,13 +237,13 @@ body
 #info-block p
 {
     margin-bottom: 60px;
-    font-size: calc(10px + 1vw);
+    font-size: calc(8px + 0.9vw);
 }
 
 #about-image
 {
     border-radius: 10px;
-    min-width: 60%;
+    min-width: 70%;
     width: 50%;
     height: auto;
 }
