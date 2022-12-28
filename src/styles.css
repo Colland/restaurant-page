@@ -20,7 +20,7 @@ body
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 12fr;
-    background-image: url(./dog.png);
+    background-image: url(./background-image.jpg);
     background-size: cover;
 }
 
