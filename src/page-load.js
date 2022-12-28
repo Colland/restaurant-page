@@ -104,16 +104,26 @@ function loadHomePage()
     const mainCardDiv1 = document.createElement('div');
     const mainCardDiv2 = document.createElement('div');
 
+    const addressIcon = document.createElement("span");
+    addressIcon.setAttribute('id', 'address-icon');
     const addressText = document.createElement('p');
     addressText.textContent = "86/88 Railside Avenue, Henderson, Auckland 0612";
+
+    const hoursContainer = document.createElement('div');
+    hoursContainer.setAttribute('id', 'hours-container');
+    const hoursIcon = document.createElement('span');
+    hoursIcon.setAttribute('id', 'hours-icon');
     const storeHours1 = document.createElement('p');
     storeHours1.textContent = "Mon-Thursday 4pm-9pm";
     const storeHours2 = document.createElement('p');
     storeHours2.textContent = "Fri-Sunday 4pm 11pm";
 
+    mainCardDiv1.appendChild(addressIcon);
     mainCardDiv1.appendChild(addressText);
-    mainCardDiv2.appendChild(storeHours1);
-    mainCardDiv2.appendChild(storeHours2);
+    mainCardDiv2.appendChild(hoursIcon);
+    mainCardDiv2.appendChild(hoursContainer);
+    hoursContainer.appendChild(storeHours1);
+    hoursContainer.appendChild(storeHours2);
 
     mainCard.appendChild(mainCardDiv1);
     mainCard.appendChild(mainCardDiv2);
