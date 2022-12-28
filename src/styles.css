@@ -21,7 +21,6 @@ body
     display: grid;
     grid-template-rows: 1fr 12fr;
     background-image: url(./dog.png);
-    background-position: bottom;
     background-size: cover;
 }
 
@@ -208,9 +207,13 @@ body
 #info-block p
 {
     margin-bottom: 60px;
+    font-size: calc(10px + 1vw);
 }
 
 #about-image
 {
     border-radius: 10px;
+    min-width: 60%;
+    width: 50%;
+    height: auto;
 }
